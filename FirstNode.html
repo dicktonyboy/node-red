@@ -1,0 +1,30 @@
+<script type="text/javascript">
+   RED.nodes.registerType('FirstNode',{
+       category    :    'MyNodes',
+       color       : '#ffaaaa',
+       defaults   : {
+           name   : {value:""}
+                         },
+       inputs      :1,
+       outputs    :1,
+       icon         : "face.png",
+       label        : function() {
+            return this.name||"FirstNode";
+       }
+    });
+</script>
+
+<script type="text/x-red" data-help-name="FirstNode">
+     <p>The simplest of all Nodes to implement as an introductory example.<br/></p>
+</script>
+
+<script type="text/x-red" data-template-name="FirstNode">
+       <div class="form-row">
+            <label for="node-input-name"><i class="icon-tag"></i> Topic</label>
+            <input type="text" id="node-input-topic" placeholder="Name">
+       </div>
+       <div class="form-row">
+            <label for="node-input-name"><i class="icon-tag"></i> Topic</label>
+            <input type="text" id="node-input-topic" placeholder="Topic">
+       </div>
+</script>
