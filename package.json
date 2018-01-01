@@ -1,0 +1,12 @@
+{
+    "name": "node-red-contrib-firstnode",
+    "version": "0.0.1",
+    "description": "The simplest of simple nodes",
+    "dependencies": {},
+    "keywords": [ "node-red" ],
+    "node-red": {
+        "nodes": {
+            "sample": "firstNode/FirstNode.js"
+        }
+    }
+}
